@@ -1,0 +1,11 @@
+<template>
+	<require from="./card"></require>
+
+	<button click.delegate="newCard()">New Card</button>
+
+	<div>
+		<li repeat.for="card of cards">
+			<compose view-model="card"></compose>
+		</li>
+	</div>
+</template>
